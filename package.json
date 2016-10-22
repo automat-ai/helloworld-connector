@@ -1,0 +1,20 @@
+{
+  "name": "automat-helloworld-connector",
+  "version": "1.0.0",
+  "description": "A simple hello world connector",
+  "main": "connector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "LEVEL=DEBUG NODE_DEBUG=cluster NODE_ENV=dev node connector.js | bunyan -l debug"
+  },
+  "author": "Automat Technologies Inc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bunyan": "^1.8.1",
+    "bunyan-middleware": "^0.4.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "express-toobusy": "0.0.3"
+  }
+}
